@@ -13,8 +13,6 @@ libraryDependencies ++= Seq(
   Library.Http4sBlazeServer,
   Library.Http4sBlazeClient,
   Library.Http4sCirce,
-  Library.CirceGeneric,
-  Library.CirceLiteral,
   Library.LogBack,
   Library.ScalaLogging,
   Library.ScalaTest,

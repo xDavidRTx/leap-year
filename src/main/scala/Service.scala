@@ -1,6 +1,5 @@
 import cats.effect._
 import cats.implicits._
-import io.circe.literal._
 import org.http4s.HttpRoutes
 import org.http4s.circe.CirceEntityCodec.circeEntityEncoder
 import org.http4s.client.{Client, JavaNetClientBuilder}
