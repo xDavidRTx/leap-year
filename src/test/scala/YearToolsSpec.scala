@@ -17,4 +17,8 @@ class YearToolsSpec extends AnyFlatSpec with Matchers {
   "101 BC" must "be a leap year" in {
     YearTools.isLeapYear(-101) should be("is not")
   }
+
+  "1800" must "be a leap year" in {
+    YearTools.isLeapYear(1800) should be("is not")
+  }
 }

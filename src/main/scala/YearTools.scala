@@ -1,9 +1,11 @@
 object YearTools {
-  def isLeapYear(year: Int): String = {
-    if (year % 4 equals 0) {
-      "is"
-    } else {
-      "is not"
-    }
+  def isLeapYear(year: Int): String = if ( {
+    Set(year % 4 == 0 && year % 100 != 0,
+      year % 400 == 0 && year % 100 != 0)
+      .exists(identity)
+  }) {
+    "is"
+  } else {
+    "is not"
   }
 }
